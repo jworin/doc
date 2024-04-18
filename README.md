@@ -13,7 +13,7 @@
     - [Volumetric Capture of Humans with a Single RGBD Camera via Semi-Parametric Learning](https://arxiv.org/abs/1905.12162)
 - Radio Frequency (RF) technologies
     - [3D Human Pose Estimation for Free-from and Moving Activities Using WiFi](https://arxiv.org/abs/2204.07878)
-    - [Unsupervised Learning for Human Sensing Using Radio Signals](Unsupervised Learning for Human Sensing Using Radio Signals)
+    - [Unsupervised Learning for Human Sensing Using Radio Signals](https://arxiv.org/abs/2207.02370)
 
 #### passive sensor: (no extra signals):
 
@@ -43,6 +43,7 @@
 current problems and solutions
 
 > **Depth Ambiguity**:
+> 
 > different 3d pose projecting to 2d images may result in same pose
 
 - [View Invariant 3D Human Pose Estimation](https://arxiv.org/abs/1901.10841)
@@ -54,6 +55,7 @@ current problems and solutions
 
 
 > **Body Structure Understanding**:
+> 
 > Human body’s unique structures can provide constraints or prior information which could be used to improve pose estimation. 
 > 
 > How to utilize?
@@ -61,7 +63,19 @@ current problems and solutions
 - [A Joint Relationship Aware Neural Network for Single-Image 3D Human Pose Estimation](https://ieeexplore.ieee.org/document/8995784)
   - feature attention block
 - [Limb Pose Aware Networks for Monocular 3D Pose Estimation](https://ieeexplore.ieee.org/abstract/document/9663053)
-  - prevent errors
+  - can be used to reduce errors
+- [Monocular 3D Pose Estimation via Pose Grammar and Data Augmentation](https://ieeexplore.ieee.org/document/9450016)
+  - kinematics, symmetry, motor coordination -> RNN
+
+keypoints based human model can be processed by a GNN (Graph) network to better understand for nodes and edges.
+
+- [Feature Boosting Network For 3D Pose Estimation](https://arxiv.org/abs/1901.04877)
+  - graphic ConvLSTM
+- [Learning Skeletal Graph Neural Networks for Hard 3D Pose Estimation](https://arxiv.org/abs/2108.07181)
+
+> **Occlusion Problems**:
+>
+> 
 
 
 ##### video based
