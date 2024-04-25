@@ -120,8 +120,37 @@ Self-attention for Efficient Human Pose Estimation](https://openaccess.thecvf.co
 > **Body Structure Understanding**:
 
 - [Motion Guided 3D Pose Estimation from Videos](https://arxiv.org/abs/2004.13985)
+- [Anatomy-aware 3D Human Pose Estimation with Bone-based Pose Decomposition](https://arxiv.org/abs/2002.10322)
+- [Boosting Monocular 3D Human Pose Estimation With Part Aware Attention](https://ieeexplore.ieee.org/document/9798770)
+
+> **Occlusion**:
+
+- [Occlusion-Aware Networks for 3D Human Pose Estimation in Video](https://openaccess.thecvf.com/content_ICCV_2019/papers/Cheng_Occlusion-Aware_Networks_for_3D_Human_Pose_Estimation_in_Video_ICCV_2019_paper.pdf)
+  
+
+> **Data Lacking**:
+>
+> annotated 3D videos are relatively scarce
+
+- [Towards Alleviating the Modeling Ambiguity of Unsupervised Monocular 3D
+Human Pose Estimation](https://openaccess.thecvf.com/content/ICCV2021/papers/Yu_Towards_Alleviating_the_Modeling_Ambiguity_of_Unsupervised_Monocular_3D_Human_ICCV_2021_paper.pdf)
+  - unsupervised
+- [Weakly-Supervised Discovery of Geometry-Aware Representation for 3D Human Pose Estimation](https://arxiv.org/abs/1903.08839)
+- [P-STMO: Pre-Trained Spatial Temporal Many-to-One Model for 3D Human Pose Estimation](https://arxiv.org/abs/2203.07628)
+  - randomly mask body joints in spatial and temporal domains
+
 
 #### multi person
+
+Top-Down: detection + estimation
+Bottom-Up: estimation + association
+
+Dual:
+- [Dual networks based 3D Multi-Person Pose Estimation from Monocular Video](https://arxiv.org/abs/2205.00748)
+  - finally fed into a network to obtain final 3D pose
+
+Single Stage:
+- [Single-Stage is Enough: Multi-Person Absolute 3D Pose Estimation](https://openaccess.thecvf.com/content/CVPR2022/papers/Jin_Single-Stage_Is_Enough_Multi-Person_Absolute_3D_Pose_Estimation_CVPR_2022_paper.pdf)
 
 ##### Top-Down
 
