@@ -1,6 +1,11 @@
 
 # Pose Eetimation
 
+
+> **"In contrast to image-based methods, utilizing video-based methods is unequivocally seen as the trajectory of future advancements."**
+
+> one-stage, end-to-end methods represent this field's future direction, in line with other domains in computer vision. 
+
 ### Sensor needed
 
 #### active sensor: (emit signals):
@@ -142,8 +147,12 @@ Human Pose Estimation](https://openaccess.thecvf.com/content/ICCV2021/papers/Yu_
 
 #### multi person
 
-Top-Down: detection + estimation
-Bottom-Up: estimation + association
+*same like 2D pose*, in multiple person scenarios, the method can be separated into:
+
+- Top-Down: detection + estimation
+- Bottom-Up: estimation + association
+
+Moreover:
 
 Dual:
 - [Dual networks based 3D Multi-Person Pose Estimation from Monocular Video](https://arxiv.org/abs/2205.00748)
@@ -154,9 +163,38 @@ Single Stage:
 
 ##### Top-Down
 
+~~*我觉得这几篇都可以看一下*~~
+
+- [AlphaPose: Whole-Body Regional Multi-Person Pose Estimation and Tracking in Real-Time](https://arxiv.org/abs/2211.03375)
+- [Cross-View Tracking for Multi-Human 3D Pose Estimation at over 100 FPS](https://arxiv.org/abs/2003.03972)
+  - real-time from videos + **multi-camera setup**
+- [VoxelTrack: Multi-Person 3D Human Pose Estimation and Tracking in the Wild](https://arxiv.org/abs/2108.02452)
+  - based on voxel
+- [PandaNet : Anchor-Based Single-Shot Multi-Person 3D Pose Estimation](https://arxiv.org/abs/2101.02471)
+  - based on anchor?
+- [Camera Distance-aware Top-down Approach for 3D Multi-person Pose Estimation from a Single RGB Image](https://arxiv.org/abs/1907.11346)
+  - no ground truth needed?
+
 #### Bottom-Up
 
+~~*似乎都不是纯关键点做的了，都沾点别的表示方法*~~
+这边有几篇也可以看一下的，都挺经典的
 
+- [Deep Network for the Integrated 3D Sensing of Multiple People in Natural Images](https://proceedings.neurips.cc/paper/2018/hash/6a6610feab86a1f294dbbf5855c74af9-Abstract.html)
+  - MubyNet 2018, probably the typical method in 3d
+- [Compressed Volumetric Heatmaps for Multi-Person 3D Pose Estimation](https://arxiv.org/abs/2004.00329)
+  - high-resolution volumetric heatmap -> performance 
+  - autoencoder -> compress the size of representation
+- [HMOR: Hierarchical Multi-Person Ordinal Relations for Monocular Multi-Person 3D Pose Estimation](https://arxiv.org/abs/2008.00206)
+  - corse to fine architecture
+- [Single-Shot Multi-Person 3D Pose Estimation From Monocular RGB](https://arxiv.org/abs/1712.03453)
+  - occlusion-robust
+- [Single-shot 3D multi-person pose estimation in complex images](https://arxiv.org/abs/1911.03391)
+  - based on PandaNet, no bounding-box, extends Stacked Hourglass Network
+- [LCR-Net++: Multi-person 2D and 3D Pose Detection in Natural Images](https://arxiv.org/abs/1803.00455)
+  - address the issue of occlusion
+  - "integrates adjacent pose hypotheses to predict the multi-person 2D and 3D poses without approximating initial human localization when a person is partially occluded or truncated by the image boundaries."
+  - 引用数挺高，可以看一下的
 ---
 
 ## Others
